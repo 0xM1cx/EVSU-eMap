@@ -28,12 +28,12 @@ To get started with the eMAP project, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/0xM1cx/eVSU-eMAP.git
+   git clone git@github.com:0xM1cx/EVSU-eMap.git
    ```
 
 2. **Install Dependencies:**
    ```bash
-   cd eVSU-eMAP
+   cd EVSU-eMap
    pip install -r requirements.txt
    ```
 
