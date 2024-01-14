@@ -63,7 +63,9 @@ This project is licensed under the [MIT License](LICENSE).
 
 For any questions or concerns, feel free to reach out to the project maintainers:
 
-- Your Name: [Your Name](mailto:your.email@example.com)
-- Project Manager: [Project Manager](mailto:project.manager@example.com)
+- Developer: Shawn Michael Sudaria(mailto:shawnmichaelsudaria14@gmail.com)
+- Developer: Charles Lawrence Gula(mailto:lancegula05@gmail.com)
+- Developer: John Ivan Galang
+
 
 Thank you for your interest and contribution to the Eastern Visayas State University eMAP project!
