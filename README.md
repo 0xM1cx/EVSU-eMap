@@ -1,7 +1,5 @@
 # Eastern Visayas State University eMAP
 
-![Logo](<link-to-your-logo>)
-
 ## Overview
 
 Welcome to the Eastern Visayas State University (EVSU) eMAP project repository! This web application, built using Python Flask, is designed to provide students with a convenient way to manage their class schedules and navigate the university campus effectively. The eMAP (Electronic Maps and Schedules) system aims to enhance the student experience by offering features such as schedule management, real-time class information, and campus navigation.
@@ -30,7 +28,7 @@ To get started with the eMAP project, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/eVSU-eMAP.git
+   git clone https://github.com/0xM1cx/eVSU-eMAP.git
    ```
 
 2. **Install Dependencies:**
