@@ -1,3 +1,9 @@
+# Eastern Visayas State University eMAP
+
+## Overview
+
+Welcome to the Eastern Visayas State University (EVSU) eMAP project repository! This web application, built using Python Flask, is designed to provide students with a convenient way to manage their class schedules and navigate the university campus effectively. The eMAP (Electronic Maps and Schedules) system aims to enhance the student experience by offering features such as schedule management, real-time class information, and campus navigation.
+
 ## Features
 
 1. **Dynamic Class Schedules:**
