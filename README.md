@@ -1,9 +1,9 @@
-# Eastern Visayas State University eMAP
 
-## Overview
+  # locofy-html-css-project
 
-Welcome to the Eastern Visayas State University (EVSU) eMAP project repository! This web application, built using Python Flask, is designed to provide students with a convenient way to manage their class schedules and navigate the university campus effectively. The eMAP (Electronic Maps and Schedules) system aims to enhance the student experience by offering features such as schedule management, real-time class information, and campus navigation.
+  Note: Please ensure you have installed <code><a href="https://nodejs.org/en/download/">nodejs</a></code>
 
+<<<<<<< HEAD
 ## Features
 
 1. **Dynamic Class Schedules:**
@@ -76,3 +76,10 @@ For any questions or concerns, feel free to reach out to the project maintainers
 -   Developer: [John Ivan Galang](mailto:johnivan.galang@evsu.edu.ph)
 
 Thank you for your interest and contribution to the Eastern Visayas State University eMAP project!
+=======
+  To preview and run the project on your device:
+  1) Open project folder in <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
+  2) In the terminal, run `npm install`
+  3) Run `npm start` to view project in browser
+  
+>>>>>>> f1a520dd06bb59b252040e0937e6b5e2ac10c87c
