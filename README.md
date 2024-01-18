@@ -1,9 +1,3 @@
-
-  # locofy-html-css-project
-
-  Note: Please ensure you have installed <code><a href="https://nodejs.org/en/download/">nodejs</a></code>
-
-<<<<<<< HEAD
 ## Features
 
 1. **Dynamic Class Schedules:**
@@ -76,10 +70,3 @@ For any questions or concerns, feel free to reach out to the project maintainers
 -   Developer: [John Ivan Galang](mailto:johnivan.galang@evsu.edu.ph)
 
 Thank you for your interest and contribution to the Eastern Visayas State University eMAP project!
-=======
-  To preview and run the project on your device:
-  1) Open project folder in <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
-  2) In the terminal, run `npm install`
-  3) Run `npm start` to view project in browser
-  
->>>>>>> f1a520dd06bb59b252040e0937e6b5e2ac10c87c
