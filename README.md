@@ -25,7 +25,7 @@ Welcome to the Eastern Visayas State University (EVSU) eMAP project repository! 
     - Edit your class schedule directly within the application.
     - Changes made to the schedule are automatically reflected in the system, providing real-time updates.
 
-## Getting Started
+## Installation
 
 To get started with the eMAP project, follow these steps:
 
