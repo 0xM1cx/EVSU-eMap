@@ -1,0 +1,80 @@
+/* Main Design of the Web*/
+body {
+    background: #1b232c;
+
+}
+
+/* Search Bar */
+#search {
+    padding-top: 5%;
+}
+
+#search input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: transparent;
+    border: solid white 1px;
+    border-radius: 1vh;
+}
+
+.room-input {
+    color: white;
+    margin-bottom: 3vh;
+}
+
+/* Search Buttonr */
+.search-button {
+    height: 3rem;
+    width: 70px;
+    background-color: #ff29a6;
+    color: white;
+    border: none;
+    border-radius:1vh;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background: #42e4e4;
+    transition: 300ms;
+}
+
+
+/* Map Division */
+.map-container {
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img {
+    border: solid green 1px;
+}
+
+
+/* Zoom-in-Zoom-out */
+#zoom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+}
+
+#zoom-in {
+    height: 3rem;
+    width: 110px;
+    background-color: #ff29a6;
+    color: white;
+    border: none;
+    border-radius:1vh;
+    cursor: pointer;
+}
+#zoom-out {
+    height: 3rem;
+    width: 110px;
+    background-color: #ff29a6;
+    color: white;
+    border: none;
+    border-radius:1vh;
+    cursor: pointer;
+}
+
