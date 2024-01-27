@@ -78,8 +78,9 @@ body {
     background: #42e4e4;
     transition: 300ms;
 }
-
-
+.register-here {
+    color: rgb(106, 218, 246);
+}
 
 /* Sign up Container */
 .signup-text {
@@ -105,6 +106,7 @@ body {
     background: transparent;
     border: solid white 1px;
     border-radius: 1vh;
+    color: #000000;
 }
 
 
@@ -138,3 +140,4 @@ body {
     background: #42e4e4;
     transition: 300ms;
 }
+

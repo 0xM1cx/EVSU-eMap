@@ -18,6 +18,7 @@ const logIn = () => {
         password: log_Password.value
     };
     saveDataToLocalStorage(userData);
+    
 }
 
 // signup onclick function
