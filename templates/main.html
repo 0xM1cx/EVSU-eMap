@@ -31,7 +31,7 @@
             <!-- EVSU Map DIVISION-->
             <div class="">
                 <div class="map-container">
-                    <img class="map" src="{{ url_for('static', filename='./images/EVSU Map.png' )}}" alt="EVSU Map" id="evsu_map">
+                    <img class="map" src="{{ url_for('static', filename='./images/EVSU-Map.png' )}}" alt="EVSU Map" id="evsu_map">
                 </div>
                 <div class="zoom-buttons d-flex align-items-center justify-content-around mx-auto mt-3">
                     <button class="btn" id="zoom-in">Zoom In</button>
@@ -42,13 +42,13 @@
             <div class="output-container px-3 pt-3 mx-3">
                 <h5><strong>Facility Room:</strong> <span id="facility-room-result"></span></h5>
                 <h5><strong>Facility Building:</strong> <span id="facility-building-result"></span></h5>
-                <div class="building-result">
+                <div class="building-result mt-5 pt-3" id="buildingResult">
                 </div>
             </div>
         </div>
     </div>
 
-
+    <script src="{{ url_for('static', filename='./js/buildings.js')}}"></script>
     <script src="{{ url_for('static', filename='./js/search_bar.js')}}"></script>
 </body>
 

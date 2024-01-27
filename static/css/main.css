@@ -89,10 +89,10 @@ body {
     background:rgb(255, 96, 96);
     border-radius: 10px;
 }
-img {
+.map-container > img {
     width: 700px;
     height: auto;
-    transform: rotate(28deg);
+    /* transform: rotate(28deg); */
 }
 
 .map-container{
@@ -124,3 +124,10 @@ img {
 .output-container strong {
     color: #91ff98;
 }
+
+.building-result > img {
+    /* border-radius: 1000px; */
+    display: block;
+    margin: auto;
+    width: 300px;
+} 

@@ -224,6 +224,10 @@
         "Lecture Room 34", 
         "Accreditation Room", 
         "Storage / Faculty" 
+    ],
+    "Auditorium" : [
+        "Auditorium"
     ]
+
 
 }

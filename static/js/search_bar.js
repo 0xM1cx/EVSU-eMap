@@ -2,12 +2,15 @@ var searchInput = document.getElementById("input-search-room");
 var container = document.getElementById("container");
 var facilityRoom = document.getElementById('facility-room-result');
 var facilityBuilding = document.getElementById('facility-building-result');
+var buildingResult = document.getElementById('buildingResult');
 
 let jsonData;
+
 
 function displayResults(results) {
     // Clear previous results
     container.innerHTML = '';
+
 
     // Display new results
     results.forEach(buildingData => {
@@ -29,6 +32,15 @@ function displayResults(results) {
                     const clickedBuilding = this.getAttribute('data-building');
                     facilityBuilding.innerHTML = clickedBuilding;
                     facilityRoom.innerHTML = room;
+                    // Remove existing image if any
+                    while (buildingResult.firstChild) {
+                        buildingResult.removeChild(buildingResult.firstChild);
+                    }
+                    // Create a new Image element
+                    const newImg = new Image();
+                    newImg.src = buildings[clickedBuilding];
+                    // Append the new image to the container
+                    buildingResult.appendChild(newImg);
                     searchInput.value = '';
                     container.style.display = "none";
                     // alert(`Facility: ${room} is in Building: ${clickedBuilding}`);
