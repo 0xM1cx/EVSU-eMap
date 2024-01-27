@@ -115,6 +115,10 @@ img {
 }
 
 .output-container {
+    /* border: 1px solid red; */
+    -webkit-box-shadow:inset 4px 3px 40px -13px rgba(255,255,255,0.78);
+    -moz-box-shadow: inset 4px 3px 40px -13px rgba(255,255,255,0.78);
+    box-shadow: inset 4px 3px 40px -13px rgba(255,255,255,0.78);
     flex: 1;
     color: #fff;
 }
