@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, flash, url_for, request
+from flask import Flask, render_template, redirect, flash, url_for, request, session
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import Email, DataRequired, Length, EqualTo
@@ -20,19 +20,21 @@ class StudentInfo(db.Model):
 
 
 class RegistrationForm(FlaskForm):
-    email = StringField('Email', validators=[DataRequired(), Length(min=3, max=100)])
-    username = StringField('Username', validators=[DataRequired(), Length(min=3, max=100)])
-    password = StringField('Password', validators=[DataRequired(), Length(min=3, max=100)])
+    email = StringField('Email', validators=[
+                        DataRequired(), Length(min=3, max=100)])
+    username = StringField('Username', validators=[
+                           DataRequired(), Length(min=3, max=100)])
+    password = StringField('Password', validators=[
+                           DataRequired(), Length(min=3, max=100)])
     signup = SubmitField('Sign Up')
+
 
 class LoginForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired()])
     submit = SubmitField('Log In')
 
-
-
-@app.route('/', methods=['GET'])
+@app.route('/', methods=['GET', 'POST'])
 def home():
     loginForm = LoginForm()
 
@@ -40,13 +42,15 @@ def home():
         username = loginForm.username.data
         password = loginForm.password.data
 
-        student = StudentInfo.query.filter_by(username).first()
+        student = StudentInfo.query.filter_by(username=username).first()
         if student and check_password_hash(student.password, password):
+            session['username'] = username
             return redirect(url_for('landing'))
 
     return render_template('login.html', loginForm=loginForm)
 
-@app.route('/register', methods=['POST', 'GET' ])
+
+@app.route('/register', methods=['POST', 'GET'])
 def register():
     registrationForm = RegistrationForm()
 
@@ -54,7 +58,8 @@ def register():
         email = registrationForm.email.data
         username = registrationForm.username.data
         password = registrationForm.password.data
-        registerInfo =  StudentInfo(email=email, username=username, password=generate_password_hash(password))
+        registerInfo = StudentInfo(
+            email=email, username=username, password=generate_password_hash(password))
         db.session.add(registerInfo)
         db.session.commit()
 
@@ -62,10 +67,13 @@ def register():
 
     return render_template('register.html', registrationForm=registrationForm)
 
+
 @app.route('/home', methods=['POST', 'GET'])
 def landing():
-    if request.method== 'POST':
+    if 'username' in session:
         return render_template('main.html')
+    return redirect(url_for('home'))
+
 
 if __name__ == '__main__':
     with app.app_context():
