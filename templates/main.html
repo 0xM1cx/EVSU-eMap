@@ -12,30 +12,44 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="{{ url_for('static', filename='./css/main.css')}}">
     <script src="{{ url_for('static', filename='./js/mapZoom-in--out.js')}}"></script>
-    <script src="{{ url_for('static', filename='./js/search.js')}}"></script>
+    <!-- <script src="{{ url_for('static', filename='./js/search.js')}}"></script> -->
 </head>
 
 <body>
 
-    <!-- Search Bar  -->
-    <div class="container" id="search">
-        <input type="text" class="room-input" placeholder="Search Room" id="input-search-room">
-        <button type="submit" class="search-button" id="search-button">Search</button>
+    <div class="main-container">
+        <!-- Search Bar  -->
+        <div class="container position-relative search-container d-flex align-items-center justify-content-center mt-5" id="search">
+            <input type="text" class="room-input" placeholder="Search Room" id="input-search-room">
+            <button type="submit" class="search-button mx-3 btn" id="search-button">Search</button>
+
+            <div class="position-absolute search-result-container" id="container">
+            </div>
+        </div>
+        
+        <div class="mt-5 p-3 d-flex align-items-top justify-content-evenly">
+            <!-- EVSU Map DIVISION-->
+            <div class="">
+                <div class="map-container">
+                    <img class="map" src="{{ url_for('static', filename='./images/EVSU Map.png' )}}" alt="EVSU Map" id="evsu_map">
+                </div>
+                <div class="zoom-buttons d-flex align-items-center justify-content-around mx-auto mt-3">
+                    <button class="btn" id="zoom-in">Zoom In</button>
+                    <button class="btn" id="zoom-out">Zoom Out</button>
+                </div>
+            </div>
+
+            <div class="output-container px-3 pt-3">
+                <h5><strong>Facility Room:</strong> <span id="facility-room-result"></span></h5>
+                <h5><strong>Facility Building:</strong> <span id="facility-building-result"></span></h5>
+                <div class="building-result">
+                </div>
+            </div>
+        </div>
     </div>
 
 
-    <!-- EVSU Map DIVISION-->
-    <div class="map-container">
-        <img class="map" src="{{ url_for('static', filename='./images/EVSU Map.png' )}}" alt="EVSU Map" id="EVSU">
-    </div>
-
-
-    <!-- Zoom-in-Zoom-out division-->
-    <div class="container-fluid" id="zoom-button">
-        <button class="m-5" id="zoom-in" onclick="zoomIn()">Zoom In</button>
-        <button class="m-5" id="zoom-out" onclick="zoomOut()">Zoom Out</button>
-    </div>
-
+    <script src="{{ url_for('static', filename='./js/search_bar.js')}}"></script>
 </body>
 
 </html>

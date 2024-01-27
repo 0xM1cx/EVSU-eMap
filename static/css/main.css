@@ -1,15 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 /* Main Design of the Web*/
 body {
     background: #1b232c;
-
+    /* overflow: hidden; */
 }
 
+/* Main container */
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
 /* Search Bar */
-#search {
-    padding-top: 5%;
-}
+/* .search-container {
+    border: 1px solid red;
+} */
 
-#search input {
+#input-search-room {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -17,64 +28,96 @@ body {
     border: solid white 1px;
     border-radius: 1vh;
 }
+#input-search-room::placeholder {
+    color: #c7c7c7;
+}
+
 
 .room-input {
     color: white;
-    margin-bottom: 3vh;
 }
 
-/* Search Buttonr */
+/* Search Button */
 .search-button {
-    height: 3rem;
-    width: 70px;
+    padding: 10px 25px;
     background-color: #ff29a6;
     color: white;
     border: none;
-    border-radius:1vh;
+    border-radius: 7px;
     cursor: pointer;
 }
-
+.room-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
 .search-button:hover {
     background: #42e4e4;
     transition: 300ms;
+}
+.search-result-container {
+    display: none;
+    color: #FFFFFF;
+    top: 6.9vh;
+    left: 1vw;
+    width: 86.5%;
+    background-color: #484848;
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 99;
+    /* border: 2px solid red; */
 }
 
 
 /* Map Division */
 .map-container {
+    /* border: 1px solid red; */
     overflow: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 650px;
+    height: 500px;
+    background: white;
+}
+.map-container::-webkit-scrollbar{
+    width: 10px;
+}
+.map-container::-webkit-scrollbar-horizontal  {
+    height: 5px;
+}
+.map-container::-webkit-scrollbar-track, .map-container::-webkit-scrollbar-track-horizontal {
+    background: rgb(255, 255, 255);
+}
+.map-container::-webkit-scrollbar-thumb, .map-container::-webkit-scrollbar-thumb-horizontal {
+    background:rgb(255, 96, 96);
+    border-radius: 10px;
 }
 img {
-    border: solid green 1px;
+    width: 700px;
+    height: auto;
+    transform: rotate(28deg);
 }
 
-
-/* Zoom-in-Zoom-out */
-#zoom-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;;
+.map-container{
+    flex: 1.5;
 }
 
-#zoom-in {
-    height: 3rem;
-    width: 110px;
-    background-color: #ff29a6;
-    color: white;
+/* Zoom Buttons */
+.zoom-buttons {
+    z-index: 100;
+    width: 300px;
+}
+.zoom-buttons button {
+    padding: 5px 10px;
     border: none;
-    border-radius:1vh;
-    cursor: pointer;
+    border-radius: 5px;
+    background: #53df2c;
 }
-#zoom-out {
-    height: 3rem;
-    width: 110px;
-    background-color: #ff29a6;
-    color: white;
-    border: none;
-    border-radius:1vh;
-    cursor: pointer;
+.zoom-buttons button:hover {
+    background: #35b811;
 }
 
+.output-container {
+    flex: 1;
+    color: #fff;
+}
+.output-container strong {
+    color: #69b9e7;
+}
