@@ -77,7 +77,7 @@ body {
     background: white;
 }
 .map-container::-webkit-scrollbar{
-    width: 10px;
+    width: 16px;
 }
 .map-container::-webkit-scrollbar-horizontal  {
     height: 5px;
@@ -108,20 +108,19 @@ img {
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
-    background: #53df2c;
+    background: #ffef15;
 }
 .zoom-buttons button:hover {
     background: #35b811;
 }
 
 .output-container {
-    /* border: 1px solid red; */
-    -webkit-box-shadow:inset 4px 3px 40px -13px rgba(255,255,255,0.78);
-    -moz-box-shadow: inset 4px 3px 40px -13px rgba(255,255,255,0.78);
-    box-shadow: inset 4px 3px 40px -13px rgba(255,255,255,0.78);
+    border: solid white 2px;
+    border-radius: 1rem;
     flex: 1;
     color: #fff;
+    background-color: #1e1e1e;
 }
 .output-container strong {
-    color: #69b9e7;
+    color: #91ff98;
 }
