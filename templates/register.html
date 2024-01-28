@@ -9,14 +9,14 @@
         <form action="{{ url_for('register') }}" method="post">
             {{ registrationForm.csrf_token }}
             <p class="signup-text">Sign Up</p>
-            <div class="signup-input form-control">
+            <div class="signup-input">
                 <input type="email" name="email" class="email-input " placeholder="Email Address" id="user-email-input" required>
                 <input type="text" name="username" class="username-input"  placeholder="Username" id="user-username-input" required>
                 <input type="password" name="password" class="password-input" placeholder="Password" id="user-password-input" required>    
             </div>
     <!-- signup-button -->
             {{ registrationForm.signup(class="signup-button") }}
-            <p>Already have an account? <a href="{{ url_for('home')}}">Log in here</a></p>
+            <p class="al-account mt-2">Already have an account? <a href="{{ url_for('home')}}">Log in here</a></p>
         </form>
     </div>
 </div>

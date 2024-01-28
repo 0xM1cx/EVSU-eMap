@@ -15,10 +15,6 @@ body {
     height: 100vh;
     overflow-x: hidden;
 }
-/* Search Bar */
-/* .search-container {
-    border: 1px solid red;
-} */
 
 #input-search-room {
     width: 100%;
@@ -38,19 +34,21 @@ body {
 }
 
 /* Search Button */
-.search-button {
-    padding: 10px 25px;
+.logout-button {
+    /* padding: 2.12vh 1.5vw; */
     background-color: #ff29a6;
     color: white;
     border: none;
     border-radius: 7px;
     cursor: pointer;
+    min-width: 10vw;
+    text-decoration: none;
 }
 .room-item:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-.search-button:hover {
+.logout-button:hover {
     background: #42e4e4;
     transition: 300ms;
 }
@@ -119,6 +117,7 @@ body {
     border-radius: 1rem;
     flex: 1;
     color: #fff;
+    min-width: 35vw;
     background-color: #1e1e1e;
 }
 .output-container strong {

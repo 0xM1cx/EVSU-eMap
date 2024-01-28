@@ -74,6 +74,11 @@ def landing():
         return render_template('main.html')
     return redirect(url_for('home'))
 
+@app.route('/logout')
+def logout():
+    session.pop('username', None)
+    return redirect(url_for('home'))
+
 
 if __name__ == '__main__':
     with app.app_context():
