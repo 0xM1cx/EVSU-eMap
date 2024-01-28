@@ -16,5 +16,6 @@ const buildings = {
     "Gabaldon Building"  : '../static/images/Gabaldon-building.png',
     "ITTDC Building" : '../static/images/ITTDC-Building.png',
     "Architecture Building" : '../static/images/CAAD-building.png',
-    "COBE Building" : '../static/images/COBE-building.png'
+    "COBE Building" : '../static/images/COBE-building.png',
+    "Auditorium" : '../static/images/Audi-Building.png'
 }
