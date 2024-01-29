@@ -10,7 +10,6 @@ app.config['SECRET_KEY'] = 'kunwariSecretLang'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///maps_user.db'
 db = SQLAlchemy(app)
 
-
 class StudentInfo(db.Model):
     __tablename__ = 'User_Table'
     id = db.Column(db.Integer, primary_key=True)
@@ -67,7 +66,6 @@ def register():
 
     return render_template('register.html', registrationForm=registrationForm)
 
-
 @app.route('/home', methods=['POST', 'GET'])
 def landing():
     if 'username' in session:
@@ -78,7 +76,6 @@ def landing():
 def logout():
     session.pop('username', None)
     return redirect(url_for('home'))
-
 
 if __name__ == '__main__':
     with app.app_context():
